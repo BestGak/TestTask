@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
+    link(rel="stylesheet", href="./css/style.min.css")
+    title Favbet
+  body 
+main.main  
+  .main__container 
+    .main__container-left 
+       img.main__leftImg(src="./image/favbet.png", alt="")
+       img.main__leftYarmola(src="./image/yarmola.png", alt="")
+       .main__leftBlock 
+         p.main__leftBlock-text 
+          |Повертайся у           
+          span.main__leftBlock-span гру 
+          | з бонусом
+    .main__container-right 
+      .main__rightTeams
+        p.main__rightCountry БЕЛЬГИЯ
+        .main__right-team2
+         span.main__rightVS VS 
+         span.main__rightCountryX ХОРВАТИЯ
+      .main__rightCoefficient
+        p.main__rightCoefficient-firstValue.main__rightCoefficient--border 2.04
+        p.main__rightCoefficient-value x2.4
+        p.main__rightCoefficient-secondValue.main__rightCoefficient--border 2.04
+        .main__rightTime
+          p.main__rightTime-time 24.04
+          p.main__rightTime-time 22:00
+      button.main__rightBtn ЗРОБИ СТАВКУ
+      a(href='#').main__rightLink#popUp ЯК ЗРОБИТИ СТАВКУ?
+footer.footer
+  .container
+    .footer__reward 
+      p.footer__rewardText 
+        i.fas.fa-chevron-down.arrow
+        | бонус 4500
+        i.fas.fa-chevron-down.arrow
+    .footer__bonus 
+      a(href='//google.com')
+      .footer__bonus-bet 
+         p.footer__bonus-currency 500₴
+         p.footer__bonus-text СТАВКА
+          br
+          |  БЕЗ РИЗИКУ
+      .footer__bonus-deposit
+         p.footer__bonus-currency 4000₴
+         p.footer__bonus-text НА ПЕРШИЙ 
+          br
+          | ДЕПОЗИТ
+    .footer__icons
+      .footer__incons-payment 
+        img.footer__icon-payment(src="./image/21+.svg", alt="21+")
+        img.footer__icon-payment(src="./image/visa.svg", alt="visa")
+        img.footer__icon-payment(src="./image/mastercard.svg", alt="mastercard")
+      .footer__icons-downloadPlatform 
+        img.footer__icon-platform(src="./image/appstore.png", alt="App store")
+        img.footer__icon-platform(src="./image/google.png", alt="Google Play")
+    .footer__icons--mobile
+      .footer__incons-payment 
+        img.footer__icon-payment(src="./image/21+mob.png", alt="21+")
+        img.footer__icon-payment(src="./image/visaMob.png", alt="visa")
+        img.footer__icon-payment(src="./image/mastercardMob.png", alt="mastercard")
+      .footer__icons-downloadPlatform 
+        img.footer__icon-platform(src="./image/appstoreMob.png", alt="App store")
+        img.footer__icon-platform(src="./image/googleMob.png", alt="Google Play")
+.popUp 
+    .popUp__container 
+      .popUp__close x
+      .popUp__overflow
+        .popUp__containerLeft 
+          iframe.popUp__video(src="https://www.youtube.com/embed/aFphkKNW4Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        .popUp__containerRight  
+          h2.popUp__title ЯК ЗРОБИТИ СТАВКУ?
+          ul.popUp__ul#ul
+            li.popUp__li Зареєстуйся, якщо ще не з нами
+            li.popUp__li Знайди потрібний матч 
+            li.popUp__li Зроби ставку на потрібний результат
+            li.popUp__li У новому вікні введи суму ставки та натисни "ок"
+            li.popUp__li Підтверди вибір, натиснувши "Зробити ставку"
+          p.popUp__betComplete Ставку зроблено!  
+script(src="./js/main.min.js") 
